@@ -30,6 +30,7 @@ html {
   h1 {
     font-size: 100px;
     line-height: 1;
+    font-style: italic;
   }
   h2 {
     font-size: 45px;
@@ -63,15 +64,16 @@ html {
   /* Profile
   ------------------------------------*/
   header {
-    background: #2F3061;
+    background: #2F3062;
     color: #F7FFF7;
+    font-style: oblique;
   }
   
   
   /* Projects
   ------------------------------------*/
   .projects {
-    background: #F7FFF7;
+    background: #F7FFF1;
   }
   .projects a {
     color: #2F3061;
@@ -97,6 +99,14 @@ html {
   ------------------------------------*/
   .work-experience {
     background: #A1C6D7;
+  }
+
+  section {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
   }
   
   
@@ -160,11 +170,28 @@ html {
   
   @media screen and (max-width: 749px) {
     h1 {
-      font-size: 75px;
+      font-size: 100px;
       line-height: 0.9;
       margin-bottom: 20px;
     }
     h2 {
       line-height: 1;
+      font-style: italic;
     }
+  }
+
+  p {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  
+  p {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
